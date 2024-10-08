@@ -19,7 +19,7 @@ This is a simple One Time Password Generator application built using Python and 
 
 1. **Clone the repository**:
 ```bash
-   git clone https://github.com/yourusername/OneTimePasswordGenerator.git
+   git clone https://github.com/Igor-Vinicius-Souza/OneTime_PasswordGen.git
    cd OneTimePasswordGenerator
 ```
 2. **Install the required library**:
