@@ -91,6 +91,7 @@ def save_password(app_name, password):
 def open_saved_passwords_window():
     saved_passwords_window = tk.Toplevel(root)
     saved_passwords_window.title("Saved Passwords")
+    saved_passwords_window.resizable(False, False)
     saved_passwords_text = tk.Text(saved_passwords_window, height=10, width=50)
     saved_passwords_text.pack(pady=10)
 
@@ -105,12 +106,16 @@ def open_saved_passwords_window():
         saved_passwords_text.insert(tk.END, "No passwords saved yet.")
 
 # Setting up the main window
+
 root = tk.Tk()
+icon = tk.PhotoImage(file="chaves.png")
+root.iconphoto(True, icon)
 root.title("One Time Password Generator")
+root.resizable(False, False)
 
 # Creating the GUI elements
 label_app_name = tk.Label(root, text="Enter the app name:")
-label_app_name.pack(pady=5)
+label_app_name.pack(pady=5, padx=110)
 
 entry_app_name = tk.Entry(root)
 entry_app_name.pack(pady=5)
